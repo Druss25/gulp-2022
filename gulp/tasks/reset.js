@@ -1,4 +1,6 @@
-import {deleteAsync} from "del";
+import clean from "gulp-clean";
+
 export const reset = () => {
-	return deleteAsync(app.path.clean);
+	return app.gulp.src(app.path.clean, {})
+			.pipe(clean())
 }
