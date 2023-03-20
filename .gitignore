@@ -1,3 +1,6 @@
 /node_modules
 /dist
 package-lock.json
+/src/scss/_libs.scss
+/src/scss/fonts.scss
+
