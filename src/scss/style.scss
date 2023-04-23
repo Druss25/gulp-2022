@@ -2,7 +2,39 @@
 @import "fonts";
 @import "vars";
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-	font-family: CormorantUpright;
-	font-size: 50px;
+  font-family: "CormorantUpright", sans-serif;
+  font-size: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 ($paddingContainer + px);
+  max-width: $maxWidthContainer + ($paddingContainer) * 2 + px;
+}
+
+// Перед началом - это удалить.
+.presents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  h4 {
+    display: block;
+  }
+
+  span {
+    font-size: 100px;
+    color: rgb(245 88 88 / 50%);
+  }
 }
